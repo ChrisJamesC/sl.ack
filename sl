@@ -1,10 +1,6 @@
 #!/usr/bin/python
 
-import urllib
-import os
-import sys
-import subprocess
-import json
+# From: https://github.com/ChrisJamesC/sl.ack/
 
 # This script first executes the command passed as argument, then, when the command 
 # is done, it sends you a slack notifications through slackbot. 
@@ -25,6 +21,12 @@ import json
 # sl make
 # sl ENV_VAR=FOO make 
 # ...
+
+import urllib
+import os
+import sys
+import subprocess
+import json
 
 
 def sendSlackMessage(message,status): 
